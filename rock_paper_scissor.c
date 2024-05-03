@@ -54,24 +54,24 @@ int main()
     {
         comp = 'S';
     }
-    printf("Enter R for rock, P for paper and S for Scissor: ");
     
-    //while (you != 'R'||you != 'r'||you != 'P'||you != 'p'||you != 'S'||you != 's')
+    while (!(you == 'R' ||you == 'r'||you == 'P'||you == 'p'||you == 'S'||you == 's'))
     {
+        printf("Enter R for rock, P for paper and S for Scissor: ");
         scanf("%c",&you);
     }
-    // if (you == 'r')
-    // {
-    //     you = 'R';
-    // }
-    // if (you == 'p')
-    // {
-    //     you = 'P';
-    // }
-    // if (you == 's')
-    // {
-    //     you = 'S';
-    // }
+    if (you == 'r')
+    {
+        you = 'R';
+    }
+    if (you == 'p')
+    {
+        you = 'P';
+    }
+    if (you == 's')
+    {
+        you = 'S';
+    }
     int k = rockpaperscissor(you,comp);
     if (k == 1)
     {
